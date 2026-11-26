@@ -1,13 +1,48 @@
 # Terraform
-.terraform/
+**/.terraform/*
 *.tfstate
 *.tfstate.*
-tfplan
 *.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+*.tfvars
+!*.tfvars.example
 
-# Node
+# AWS credentials and configuration
+.aws/
+.env
+.env.*
+!.env.example
+
+# Kubernetes credentials
+.kube/
+kubeconfig
+kubeconfig.*
+
+# Node.js
 node_modules/
+npm-debug.log*
+yarn-debug.log*
 build/
+coverage/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
 # Scratch files from lab troubleshooting
 eks-describe.json
